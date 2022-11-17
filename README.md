@@ -4,7 +4,7 @@
 ![home page](assets/images/overview.png)
 
 ## About
-This project was a simple assignment given to test our still growing skills. it's about implementing
+This project was a simple assignment given to test our still growing skills. it's about implementing a figma project about a business page
 
 ## BUILT WITH
 This page is basically built with just
