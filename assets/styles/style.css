@@ -167,7 +167,8 @@ a {
 /* STARTING FEATURE7 */
 
 .feature7 {
-  background-color: yellowgreen;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature7 .container1 {
@@ -189,7 +190,7 @@ a {
   width: 180px;
 }
 
-.feature7 > .container1 p {
+.feature7 .container1 p {
   width: 225px;
   font-weight: 500;
   font-size: 14px;
@@ -199,4 +200,157 @@ a {
   bottom: 0;
 }
 
-.feature7 .container2 > div 
+.feature7 .container2 {
+  margin: 50px auto 0;
+  display: flex;
+  flex-direction: column;
+  width: 241px;
+  height: 1415px;
+}
+
+.feature7 .container2 .card-item {
+  background-color: white;
+  margin-bottom: 30px;
+  height: 432px;
+  position: relative;
+}
+
+.feature7 .card-item header {
+  font-weight: 700;
+  font-size: 16px;
+  width: 125px;
+  margin: 30px 10% 0;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+
+.feature7 .card-item p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin-left: 10%;
+}
+
+.feature7 .card-item img {
+  height: 138px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* ENDING FEATURE7 */
+/* STARTING ABBOUT2 */
+
+.about2 {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about2 .container1 {
+  text-align: center;
+  width: 324px;
+  height: 261px;
+  position: relative;
+}
+
+.about2 .container1 header {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+}
+
+.about2 .container1 p {
+  width: 225px;
+  height: 80px;
+  margin: 10px 15% 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.about2 .container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about2 .container2 .card-item1 {
+  width: 333px;
+  height: 442px;
+}
+
+.about2 .card-item2 {
+  gap: 30px;
+  width: 333px;
+  height: 438px;
+  margin-top: 72px;
+}
+
+.about2 .sub1 header {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+}
+
+.about2 .sub2 {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+/* ENDING ABOUT2 */
+/* STARTING CLIENT2 */
+
+.clients2 {
+  background-color: yellowgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clients2 .container1 {
+  margin-bottom: 85px;
+  font-size: large;
+  color: red;
+}
+
+.clients2 .container2 {
+  background-color: #16697a;
+  color: #fff;
+  height: 212px;
+  text-align: center;
+  width: 100%;
+}
+
+.clients2 .container2 header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  width: 258px;
+  letter-spacing: 0.1px;
+  margin: 30px auto 15px;
+}
+
+.clients2 .container2 .input-grp {
+  background-color: brown;
+  width: 337px;
+  height: 58px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 15px auto 30px;
+}
+
+.clients2 .input-grp input {
+  height: 100%;
+}
+
+.clients2 .input-grp button {
+  background: #FFA62B;
+  border: none;
+  color: #fff;
+  border-radius: 0px 5px 5px 0px;
+  width: 100%;
+}
