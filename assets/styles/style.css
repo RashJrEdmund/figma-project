@@ -50,6 +50,7 @@ a {
 }
 
 .header .container .row {
+  padding-top: 85px;
   background-color: #1b496b;
   color: #fff;
   margin: auto;
@@ -301,14 +302,23 @@ a {
 
 .about2 .sub2 {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about2 .sub2 img {
+  position: absolute;
+  left: 0;
+  top: 20%;
 }
 
 /* ENDING ABOUT2 */
 /* STARTING CLIENT2 */
 
 .clients2 {
-  background-color: yellowgreen;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -316,8 +326,12 @@ a {
 
 .clients2 .container1 {
   margin-bottom: 85px;
-  font-size: large;
-  color: red;
+}
+
+.clients2 .container1 .col-md3 {
+  height: max-content;
+  margin-top: 30px;
+  height: max-content;
 }
 
 .clients2 .container2 {
@@ -425,6 +439,13 @@ a {
   border-radius: 4px;
 }
 
+.contact5 .container2 i {
+  /* margin-top: 53px; */
+  width: 200px;
+  font-size:70px;
+  margin-left: 90ppxz0000;
+}
+
 /* ENDING CONTACT5 */
 /* STARTING FOOTER */
 
@@ -447,7 +468,6 @@ footer .container1 {
 }
 
 footer .container1 > div {
-  background-color: yellowgreen;
   width: 239px;
   height: 222px;
 }
@@ -467,18 +487,19 @@ footer .container2 {
 }
 
 footer .container2 .row {
-  background-color: forestgreen;
   width: fit-content;
-  margin: auto;
+  margin: 10px auto 95px;
 }
 
 footer .container2 .col-md2 {
-  background-color: purple;
   width: max-content;
 }
 
+footer .row .feature-item {
+  margin-bottom: 10px;
+}
+
 footer .container3 {
-  background-color: forestgreen;
   width: 100%;
   height: fit-content;
   margin: 60px auto 60px;
@@ -496,11 +517,32 @@ footer .container3 .last-text {
 }
 
 footer .container3 .social-media {
-  background-color: gold;
   margin-top: 53px;
   width: 200px;
+  font-size: 24px;
   justify-content: space-between;
 }
 
-@media screen { 
+footer .fa-brands {
+  margin-right: 20px;
+}
+
+.social-media .fa-square-facebook {
+  color: #335bf5;
+}
+
+.social-media .fa-square-instagram {
+  border-color: #9d2351;
+}
+
+.social-media .fa-square-twitter {
+  color: #21a6df;
+  background-color: #00A0c1;
+}
+
+.social-media .fa-square-youtube {
+  color: #e42f08;
+}
+
+@media screen {
 }
