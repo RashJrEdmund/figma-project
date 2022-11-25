@@ -6,6 +6,8 @@ body {
   margin: 0;
   font-family: sans-serif;
   background-color: #252B42;
+
+  /* font-family: 'Montserrat'; */
 }
 
 a {
@@ -13,9 +15,7 @@ a {
   color: #fff;
 }
 
-.header {
-  /* font-family: 'Montserrat'; */
-}
+/* STARTING THE HEADER */
 
 .header nav {
   background-color: #252B42;
@@ -100,6 +100,7 @@ a {
 .header .container .row .col-md6 {
   background-color: gold;
   width: 100%;
+  overflow: hidden;
 }
 
 .header .container .row .col-md6 img {
@@ -116,6 +117,7 @@ a {
 }
 
 .feature5 .container1{
+  margin: 145px auto 40px;
   color: #fff;
   text-align: center;
   width: 330px;
@@ -176,7 +178,7 @@ a {
   width: 330px;
   height: 204px;
   text-align: center;
-  margin: auto;
+  margin: 98px auto 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -254,6 +256,7 @@ a {
   text-align: center;
   width: 324px;
   height: 261px;
+  margin: 100px auto;
   position: relative;
 }
 
@@ -463,7 +466,19 @@ footer .container2 {
   width: 100%;
 }
 
+footer .container2 .row {
+  background-color: forestgreen;
+  width: fit-content;
+  margin: auto;
+}
+
+footer .container2 .col-md2 {
+  background-color: purple;
+  width: max-content;
+}
+
 footer .container3 {
+  background-color: forestgreen;
   width: 100%;
   height: fit-content;
   margin: 60px auto 60px;
