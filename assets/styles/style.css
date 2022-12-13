@@ -81,7 +81,7 @@ nav ul li {
 } */
 
 .header {
-  background-color: #1b496b;
+  background-color: #175782;
   color: #fff;
   margin: 17rem auto 12rem;
   padding-top: 85px;
@@ -563,7 +563,7 @@ footer .container3 .social-media {
 
 @media only screen and (min-width: 600px) {
   nav {
-    background-color: green;
+    /* background-color: green; */
     padding: 1rem;
     justify-content: space-between;
     margin-bottom: 0;
@@ -605,7 +605,7 @@ footer .container3 .social-media {
   }
 
   .header .col-md6 {
-    background-color: purple;
+    /* background-color: purple; */
     position: relative;
     width: 80%;
     height: 80%;
