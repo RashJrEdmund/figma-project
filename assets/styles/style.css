@@ -1,9 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box; /* so that when you added any padding or margin to an elemt, it doesn't affect the width of it */
 }
 
 body {
   margin: 0;
+  padding: 0;
   font-family: sans-serif;
   background-color: #252B42;
 
@@ -15,16 +20,17 @@ a {
   color: #fff;
 }
 
-/* STARTING THE HEADER */
+  /* STARTING THE HEADER */
 
 nav {
-  background-color: #175782;
+  background-color: #252b42;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
-  margin-bottom: 9rem;
+  padding: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 nav header {
@@ -38,8 +44,8 @@ nav header {
 }
 
 nav ul {
-  position: absolute;
   background-color: #252b42;
+  position: absolute;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -50,7 +56,7 @@ nav ul {
   list-style: none;
   padding: 0;
   width: 100%;
-  top: 0;
+  top: 15px;
   left: 0;
 }
 
@@ -83,7 +89,7 @@ nav ul li {
 .header {
   background-color: #175782;
   color: #fff;
-  margin: 17rem auto 12rem;
+  margin: 0 auto 12rem;
   padding-top: 85px;
   display: flex;
   flex-direction: column;
@@ -149,8 +155,8 @@ nav ul li {
   height: 579px;
 }
 
-/* ENDING THE HEADER SECTION */
-/* STARTING FEATURE5 */
+  /* ENDING THE HEADER SECTION
+  STARTING FEATURE5 */
 
 .feature5 {
   display: flex;
@@ -212,8 +218,8 @@ nav ul li {
   margin-top: 20px;
 }
 
-/* ENDING FEATURE5 */
-/* STARTING FEATURE7 */
+  /* ENDING FEATURE5
+   STARTING FEATURE7 */
 
 .feature7 {
   display: flex;
@@ -289,8 +295,8 @@ nav ul li {
   bottom: 0;
 }
 
-/* ENDING FEATURE7 */
-/* STARTING ABBOUT2 */
+  /* ENDING FEATURE7
+   STARTING ABBOUT2 */
 
 .about2 {
   color: #fff;
@@ -361,8 +367,8 @@ nav ul li {
   top: 20%;
 }
 
-/* ENDING ABOUT2 */
-/* STARTING CLIENT2 */
+  /* ENDING ABOUT2
+  STARTING CLIENT2 */
 
 .clients2 {
   display: flex;
@@ -422,8 +428,8 @@ nav ul li {
   width: 35%;
 }
 
-/* ENDING CLIENT2 */
-/* STARTING CONTACT5 */
+  /* ENDING CLIENT2
+  STARTING CONTACT5 */
 
 .contact5 {
   display: flex;
@@ -490,8 +496,8 @@ nav ul li {
   border-radius: 4px;
 }
 
-/* ENDING CONTACT5 */
-/* STARTING FOOTER */
+  /* ENDING CONTACT5
+  STARTING FOOTER */
 
 footer {
   background-color: #252B42;
@@ -562,23 +568,41 @@ footer .container3 .social-media {
 }
 
 @media only screen and (min-width: 600px) {
+  .varying {
+    display: unset;
+  }
+
   nav {
-    /* background-color: green; */
-    padding: 1rem;
+    background-color: #175782;
+    padding: 1rem 5vw;
     justify-content: space-between;
     margin-bottom: 0;
   }
 
-  nav ul {
-    position: unset;
-    flex-direction: row;
-    margin: 0 auto;
-    justify-content: space-evenly;
+  nav .ul-div {
+    display: flex;
     padding: 0;
   }
 
+  .menu-btn {
+    display: none;
+  }
+
+  nav ul {
+    background-color: #175782;
+    position: unset;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 20px;
+    width: unset;
+    align-self: flex-end;
+    justify-self: right;
+    max-width: 500px;
+  }
+
   nav ul li {
-    margin: 0;
+    margin: 0 1rem;
     padding: 0;
   }
 
@@ -605,7 +629,6 @@ footer .container3 .social-media {
   }
 
   .header .col-md6 {
-    /* background-color: purple; */
     position: relative;
     width: 80%;
     height: 80%;
@@ -642,15 +665,14 @@ footer .container3 .social-media {
   }
 
   .feature5 .container2 {
-    padding: 10px;
-    background-color: #000;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 33.5px;
     width: 100%;
-    flex-wrap: wrap;
     height: fit-content;
-    margin-top: 30px;
+    margin-top: auto;
   }
 
   .feature5 .container2 > div {
@@ -658,9 +680,7 @@ footer .container3 .social-media {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    align-self: center;
-    justify-self: center;
+    justify-content: center;
   }
 
   .feature5 .container2 > .mid-div {
@@ -668,11 +688,11 @@ footer .container3 .social-media {
   }
   
   .feature5 .container2 > .last-div {
-    margin-bottom: 60px;
+    margin-bottom: unset;
   }
 
   .feature5 .container2  img {
-    margin-top: 20px;
+    margin-top: 60px;
   }
 
   /* MOVING OUT OF FEATURE-5 AND ENDT
@@ -757,6 +777,26 @@ footer .container3 .social-media {
     justify-content: center;
     gap: 121.5px;
   }
+
+  /* .about2 .container2 .card-item1 {
+    width: 100%;
+    position: unset;
+  } */
+
+  /* .about2 .container2 .card-item1 img {
+    width: 100%;
+    height: 100%;
+  } */
+  
+  /* .about2 .container2  .card-item2 {
+    width: 100%;
+  } */
+
+  /* .about2 .sub2 img {
+    position: absolute;
+    left: 0;
+    top: 20%;
+  } */
 
   /* ENDING ABOUT2 
   STARTING CLIENT2 */

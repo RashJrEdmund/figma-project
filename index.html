@@ -12,19 +12,23 @@
 <body>
     <nav>
         <header>Capgemen</header>
-        <ul class="varying active">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Product</li></a>
-            <a href="#"><li>Pricing</li></a>
-            <a href="#"><li>Contact</li></a>
-        </ul>
-        <div class="nav-icons">
-            <img src="assets/images/icn search .icn-xs.png" alt="search icon">
-            <img src="assets/images/shopping-cart icons.png" alt="shopping-cart icon">
-            <img src="assets/images/menu icon.png" alt="menu icon" class="menu">
+        <div class="ul-div">
+            <span class="varying">
+                <ul class="active">
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#product"><li>Product</li></a>
+                    <a href="#pricing"><li>Pricing</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                </ul>
+            </span>
+            <div class="nav-icons">
+                <img src="assets/images/icn search .icn-xs.png" alt="search icon">
+                <img src="assets/images/shopping-cart icons.png" alt="shopping-cart icon">
+                <img src="assets/images/menu icon.png" alt="menu icon" class="menu-btn">
+            </div>
         </div>
     </nav>
-    <div class="header">
+    <div class="header" id="home">
         <div class="col-md61">
             <h1>EMPOWER <br/>YOUR BUSINESS</h1>
             <h4>
@@ -42,7 +46,7 @@
     </div>
 
     <div class="feature5">
-        <div class="container1">
+        <div class="container1" id="product">
             <header>WHY CHOOSE US</header>
             <p>
                 Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics 
@@ -152,7 +156,7 @@
                 <img src="assets/images/Vector 5.png" alt="aws photo">
             </div>
         </div>
-        <div class="container2">
+        <div class="container2" id="pricing">
             <header>Subscribe For Latest Newsletter</header>
             <div class="input-grp">
                 <input type="email" name="email" id="email" placeholder="your email">
@@ -213,7 +217,7 @@
             </div>
             <button>Contact us</button>
         </div>
-        <div class="container2">
+        <div class="container2" id="contact">
             <div class="col-md2">
                 <h5>company info</h5>
                 <div>
