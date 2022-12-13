@@ -164,7 +164,16 @@ nav ul li {
   height: 579px;
 }
 
-/* ENDING THE HEADER SECTION STARTING ENDING FOOTER .CONTAINER1 */
+/* ENDING THE HEADER SECTION STARTING ENDING FOOTER SECTION */
+
+footer {
+  background-color: #252b42;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 75px;
+}
 
 footer .container1 {
   width: 239px;
@@ -175,7 +184,57 @@ footer .container1 {
   align-items: center;
 }
 
-/* ENDING FOOTER .CONTAINER1 SECTION STARTING FEATURE5 */
+footer .container1 button {
+  background-color: #ffa62b;
+  color: #fff;
+  width: 160px;
+  height: 58px;
+  border: none;
+  border-radius: 5px;
+}
+
+footer .container2 {
+  background-color: #16697a;
+  width: 100%;
+  margin: 10px auto 95px;
+}
+
+footer .container2 .col-md2 {
+  width: max-content;
+  margin-left: 3rem;
+}
+
+footer .feature-item {
+  margin-bottom: 10px;
+}
+
+footer .container3 {
+  width: 100%;
+  height: fit-content;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .container3 .last-text {
+  width: 250px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+footer .container3 .social-media {
+  margin-top: 53px;
+  width: 200px;
+  font-size: 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+
+/* ENDING FOOTER SECTION SECTION STARTING FEATURE5 */
 
 .feature5 {
   display: flex;
@@ -515,67 +574,7 @@ footer .container1 {
   border-radius: 4px;
 }
 
-/* ENDING CONTACT5
-  STARTING FOOTER */
-
-footer {
-  background-color: #252b42;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 75px;
-}
-
-footer .container1 button {
-  background-color: #ffa62b;
-  color: #fff;
-  width: 160px;
-  height: 58px;
-  border: none;
-  border-radius: 5px;
-}
-
-footer .container2 {
-  background-color: #16697a;
-  width: 100%;
-  margin: 10px auto 95px;
-}
-
-footer .container2 .col-md2 {
-  width: max-content;
-  margin-left: 3rem;
-}
-
-footer .feature-item {
-  margin-bottom: 10px;
-}
-
-footer .container3 {
-  width: 100%;
-  height: fit-content;
-  margin: 60px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-footer .container3 .last-text {
-  width: 250px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-}
-
-footer .container3 .social-media {
-  margin-top: 53px;
-  width: 200px;
-  font-size: 24px;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 15px;
-}
+/* ENDING CONTACT5 */
 
 @media only screen and (min-width: 400px) {
   body {
