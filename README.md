@@ -35,7 +35,7 @@ Feel free to check the [issues page](https://github.com/RashJrEdmund//issues).
 
 ## Live Site
 
-[Link]()
+[Link](https://rashjredmund.github.io/figma-project/)
 
 ## AUTHOR
 **RASH**
