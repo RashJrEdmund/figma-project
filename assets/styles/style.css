@@ -527,15 +527,6 @@ footer {
   margin-top: 75px;
 }
 
-footer .container1 {
-  width: 239px;
-  height: fit-content;
-  margin: 0 auto 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 footer .container1 button {
   background-color: #ffa62b;
   color: #fff;
