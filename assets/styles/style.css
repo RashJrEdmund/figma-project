@@ -5,7 +5,7 @@ html {
 * {
   box-sizing: border-box;
 
-/* so that when you added any padding or margin to an elemt, it doesn't affect the width of it */
+  /* so that when you added any padding or margin to an elemt, it doesn't affect the width of it */
 }
 
 body {
@@ -14,7 +14,7 @@ body {
   font-family: sans-serif;
   background-color: #252b42;
 
-/* font-family: 'Montserrat'; */
+  /* font-family: 'Montserrat'; */
 }
 
 a {
@@ -725,8 +725,8 @@ footer .container3 .social-media {
     margin-top: unset;
   }
 
-/* linter was like 'move the footer styel up'
-MOVING TO FEATURE-5 */
+  /* linter was like 'move the footer styel up'
+  MOVING TO FEATURE-5 */
 
   .feature5 .container1 {
     width: 400px;
@@ -780,7 +780,7 @@ MOVING TO FEATURE-5 */
     margin-top: 60px;
   }
 
-/* MOVING OUT OF FEATURE-5 AND ENDT
+  /* MOVING OUT OF FEATURE-5 AND ENDT
   STARTING FEATURE7 */
 
   .feature7 {
@@ -827,7 +827,7 @@ MOVING TO FEATURE-5 */
     width: 241px;
   }
 
-/* ENDING FEATURE7
+  /* ENDING FEATURE7
   STARTING ABBOUT2 */
 
   .about2 {
@@ -862,28 +862,28 @@ MOVING TO FEATURE-5 */
     gap: 121.5px;
   }
 
-/* .about2 .container2 .card-item1 {
-  width: 100%;
-  position: unset;
-} */
+  /* .about2 .container2 .card-item1 {
+    width: 100%;
+    position: unset;
+  } */
 
-/* .about2 .container2 .card-item1 img {
-  width: 100%;
-  height: 100%;
-} */
+  /* .about2 .container2 .card-item1 img {
+    width: 100%;
+    height: 100%;
+  } */
 
-/* .about2 .container2  .card-item2 {
-  width: 100%;
-} */
+  /* .about2 .container2  .card-item2 {
+    width: 100%;
+  } */
 
-/* .about2 .sub2 img {
-  position: absolute;
-  left: 0;
-  top: 20%;
-} */
+  /* .about2 .sub2 img {
+    position: absolute;
+    left: 0;
+    top: 20%;
+  } */
 
-/* ENDING ABOUT2
-  STARTING CLIENT2 */
+  /* ENDING ABOUT2
+    STARTING CLIENT2 */
 
   .clients2 {
     display: flex;
@@ -934,7 +934,7 @@ MOVING TO FEATURE-5 */
     width: 50%;
   }
 
-/* ENDING CLIENT2
+  /* ENDING CLIENT2
   STARTING CONTACT5 */
 
   .contact5 {
