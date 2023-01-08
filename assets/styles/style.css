@@ -67,7 +67,6 @@ nav .ul-div {
 
 nav ul {
   background-color: #252b42;
-  /* background-color: green; */
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -595,6 +594,13 @@ footer .container3 .social-media img {
 
   nav {
     flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  nav ul .nav-a-tags {
+    width: 100%;
+    text-align: center;
   }
 }
 
