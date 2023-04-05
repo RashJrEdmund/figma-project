@@ -374,7 +374,7 @@ footer .container3 .social-media img {
   display: grid;
   grid-template-columns: 1fr;
   width: 241px;
-  height: 1415px;
+  height: fit-content;
 }
 
 .feature7 .container2 .card-item {
@@ -788,7 +788,7 @@ footer .container3 .social-media img {
     gap: 33.5px;
     width: 100%;
     height: fit-content;
-    margin-top: auto;
+    padding: 0 10px;
   }
 
   .feature5 .container2 > div {
@@ -797,6 +797,7 @@ footer .container3 .social-media img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: unset;
     padding-bottom: 30px;
   }
 
@@ -844,7 +845,6 @@ footer .container3 .social-media img {
     justify-content: center;
     gap: 39.5px;
     width: 100%;
-    height: fit-content;
     margin: 0;
   }
 
@@ -979,6 +979,7 @@ footer .container3 .social-media img {
   body {
     padding: 0;
   }
+
   .feature7 .container2 {
     grid-template-columns: repeat(4, 1fr);
   }
