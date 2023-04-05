@@ -255,6 +255,21 @@ footer .container3 .social-media {
   gap: 15px;
 }
 
+.feature5 .container2 img {
+  margin-top: 20px;
+}
+
+.feature7 .card-item img {
+  height: 138px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.about2 .sub2 img {
+  margin: 16px 5px 0 0;
+}
+
 footer .container3 .social-media img {
   margin: 0 7px;
 }
@@ -263,7 +278,7 @@ footer .container3 .social-media img {
 
 .feature5 {
   width: 100%;
-  margin:  0 auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -325,10 +340,6 @@ footer .container3 .social-media img {
 
 .feature5 .container2 > .last-div {
   margin-bottom: 60px;
-}
-
-.feature5 .container2 img {
-  margin-top: 20px;
 }
 
 /* ENDING FEATURE5
@@ -402,13 +413,6 @@ footer .container3 .social-media img {
   margin-left: 10%;
 }
 
-.feature7 .card-item img {
-  height: 138px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
 /* ENDING FEATURE7
   STARTING ABBOUT2 */
 
@@ -474,10 +478,6 @@ footer .container3 .social-media img {
   margin-bottom: 30px;
   justify-content: center;
   align-items: flex-start;
-}
-
-.about2 .sub2 img {
-  margin: 16px 5px 0 0;
 }
 
 /* ENDING ABOUT2
@@ -973,7 +973,6 @@ footer .container3 .social-media img {
     transform: scale(1.04);
   }
 }
-
 
 @media only screen and (min-width: 1200px) {
   body {
