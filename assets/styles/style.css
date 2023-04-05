@@ -4,8 +4,11 @@ html {
 
 * {
   box-sizing: border-box;
-
-  /* so that when you added any padding or margin to an elemt, it doesn't affect the width of it */
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
 }
 
 body {
@@ -13,8 +16,15 @@ body {
   padding: 0 10px;
   font-family: sans-serif;
   background-color: #252b42;
+}
 
-  /* font-family: 'Montserrat'; */
+button {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  transform: translateY(-10px);
 }
 
 a {
@@ -26,7 +36,6 @@ a {
 
 nav {
   background-color: #252b42;
-  /* background-color: brown; */
   position: fixed;
   width: 100%;
   left: 0;
@@ -50,7 +59,7 @@ nav header {
 
 .active {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   left: 0;
   top: -1000%;
   transition: 0.5s;
@@ -130,7 +139,8 @@ nav ul li {
   align-items: center;
   width: 50%;
   min-width: 185px;
-  height: 121px;
+  min-height: 121px;
+  height: fit-content;
   gap: 25px;
 }
 
@@ -168,6 +178,7 @@ nav ul li {
 
 .header .col-md6 img {
   height: 579px;
+  max-width: none;
 }
 
 /* ENDING THE HEADER SECTION STARTING ENDING FOOTER SECTION */
@@ -204,6 +215,9 @@ footer .container2 {
   width: 100%;
   margin: 10px auto 95px;
   word-break: break-all;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 footer .container2 .col-md2 {
@@ -248,6 +262,8 @@ footer .container3 .social-media img {
 /* ENDING FOOTER SECTION SECTION STARTING FEATURE5 */
 
 .feature5 {
+  width: 100%;
+  margin:  0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,7 +274,8 @@ footer .container3 .social-media img {
   color: #fff;
   text-align: center;
   width: 330px;
-  height: 204px;
+  height: fit-content;
+  min-height: 204px;
   position: relative;
 }
 
@@ -274,11 +291,18 @@ footer .container3 .social-media img {
   letter-spacing: 0.2px;
   width: 225px;
   height: 80px;
-  margin: auto;
+  margin: 0 auto;
   bottom: 0;
-  left: 50px;
+  left: 50%;
+  transform: translate(-50%);
   position: absolute;
   line-height: 20px;
+}
+
+.feature5 .container2 {
+  width: 330px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .feature5 .container2 > div {
@@ -311,6 +335,7 @@ footer .container3 .social-media img {
   STARTING FEATURE7 */
 
 .feature7 {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -346,15 +371,15 @@ footer .container3 .social-media img {
 
 .feature7 .container2 {
   margin: 50px auto 0;
-  display: flex;
-  flex-flow: column;
+  display: grid;
+  grid-template-columns: 1fr;
   width: 241px;
   height: 1415px;
 }
 
 .feature7 .container2 .card-item {
   background-color: white;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   height: 432px;
   position: relative;
 }
@@ -411,9 +436,11 @@ footer .container3 .social-media img {
 .about2 .container1 p {
   width: 225px;
   height: 80px;
-  margin: 10px 15% 0;
+  margin: 10px 0 0;
   position: absolute;
   bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .about2 .container2 {
@@ -430,7 +457,8 @@ footer .container3 .social-media img {
 .about2 .card-item2 {
   gap: 30px;
   width: 333px;
-  height: 438px;
+  height: fit-content;
+  min-height: 438px;
   margin-top: 72px;
 }
 
@@ -443,17 +471,13 @@ footer .container3 .social-media img {
 
 .about2 .sub2 {
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 30px;
   justify-content: center;
-  align-items: center;
-  position: relative;
+  align-items: flex-start;
 }
 
 .about2 .sub2 img {
-  position: absolute;
-  left: 0;
-  top: 20%;
+  margin: 16px 5px 0 0;
 }
 
 /* ENDING ABOUT2
@@ -704,16 +728,14 @@ footer .container3 .social-media img {
   }
 
   footer .container2 {
-    width: 100%;
-    margin: 10px auto 95px;
-    display: flex;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
-    padding: 100px 0;
+    padding: 100px 10px;
   }
 
   footer .container2 .col-md2 {
     width: max-content;
-    margin-left: 3rem;
+    margin-left: unset;
     line-height: 30px;
     font-size: 1.3rem;
   }
@@ -754,6 +776,8 @@ footer .container3 .social-media img {
   .feature5 .container1 p {
     width: 100%;
     position: unset;
+    transform: unset;
+    margin: 10px 0 0;
   }
 
   .feature5 .container2 {
@@ -791,11 +815,6 @@ footer .container3 .social-media img {
   /* MOVING OUT OF FEATURE-5 AND ENDT
   STARTING FEATURE7 */
 
-  .feature7 {
-    display: flex;
-    flex-direction: column;
-  }
-
   .feature7 .container1 {
     color: #fff;
     width: 330px;
@@ -816,10 +835,11 @@ footer .container3 .social-media img {
   .feature7 .container1 p {
     width: 400px;
     position: unset;
+    transform: unset;
   }
 
   .feature7 .container2 {
-    flex-flow: wrap;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
     gap: 39.5px;
@@ -851,6 +871,7 @@ footer .container3 .social-media img {
     height: 261px;
     margin: 100px auto 0;
     position: unset;
+    transform: unset;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -860,35 +881,20 @@ footer .container3 .social-media img {
   .about2 .container1 p {
     width: 100%;
     position: unset;
+    transform: unset;
   }
 
   .about2 .container2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    max-width: 97vw;
+    flex-flow: nowrap;
     gap: 121.5px;
   }
 
-  /* .about2 .container2 .card-item1 {
-    width: 100%;
-    position: unset;
-  } */
-
-  /* .about2 .container2 .card-item1 img {
-    width: 100%;
-    height: 100%;
-  } */
-
-  /* .about2 .container2  .card-item2 {
-    width: 100%;
-  } */
-
-  /* .about2 .sub2 img {
-    position: absolute;
-    left: 0;
-    top: 20%;
-  } */
+  .about2 .container2 .card-item2 {
+    margin: 0;
+    width: 333px;
+    height: 442px;
+  }
 
   /* ENDING ABOUT2
     STARTING CLIENT2 */
@@ -945,18 +951,8 @@ footer .container3 .social-media img {
   /* ENDING CLIENT2
   STARTING CONTACT5 */
 
-  .contact5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .contact5 .container1 {
-    color: #fff;
-    text-align: center;
     width: 400px;
-    height: 147px;
-    margin: 75px auto 60px;
   }
 
   .contact5 .container2 {
@@ -965,6 +961,8 @@ footer .container3 .social-media img {
     align-items: center;
     justify-content: space-evenly;
     word-break: break-all;
+    gap: 5px;
+    padding: 0 10px;
   }
 
   .contact5 .container2 .card-item {
@@ -972,7 +970,16 @@ footer .container3 .social-media img {
   }
 
   .contact5 .container2 .card-item.middle {
-    background-color: #00a0c1;
-    color: #fff;
+    transform: scale(1.04);
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  body {
+    padding: 0;
+  }
+  .feature7 .container2 {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
